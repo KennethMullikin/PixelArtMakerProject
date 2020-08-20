@@ -29,16 +29,8 @@ function makeGrid() {
       let cell = row.insertCell(k);
       cell.addEventListener("click", function(event) {
         var colorChoice = document.getElementById("colorPicker").value;
-        cell.style.backgroundColor = colorChoice.value;
+        this.style.backgroundColor = colorChoice;
       });
-
     }
   }
-
 }
-
-//pixelCanvas.addEventListener('click', function (e) {
-  //if (e.target.nodeName.toLowerCase() === "td") {
-      //e.target.style.backgroundColor = colorPicker.value;
-  //}
-//});
